@@ -22,4 +22,4 @@ var actions = {
 	clearComnpleted: function() {
 	  return { type: types.CLEAR_COMPLETED }
 	}
-}
+};

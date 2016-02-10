@@ -9,7 +9,7 @@ var initialState = [
     completed: true,
     id: 1
   }
-]
+];
 
 function todos(state, action) {
   var state = state || initialState;
