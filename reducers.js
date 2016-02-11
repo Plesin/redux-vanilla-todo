@@ -17,7 +17,7 @@ function todos(state, action) {
   switch (action.type) {
     case types.ADD_TODO:
       state.push({
-          id: state.reduce(function(maxId, todo) { return (Math.max(todo.id, maxId) -1) + 1}),
+          id: state.length ? state.reduce(function(maxId, todo) { return Math.max(todo.id, maxId); }, -1) + 1 : 0,
           completed: false,
           text: action.text
         });
